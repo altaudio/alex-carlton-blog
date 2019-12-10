@@ -27,6 +27,9 @@
     }
   },
   "lint-staged": {
-    "{pages,components}/**/*.js": "prettier --single-quote --write"
+    "{pages,components}/**/*.js": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   }
 }
