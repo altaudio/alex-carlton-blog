@@ -27,6 +27,6 @@
     }
   },
   "lint-staged": {
-    "{pages,components}/**/*.js": "echo"
+    "{pages,components}/**/*.js": "prettier --single-quote --write"
   }
 }

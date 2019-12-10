@@ -6,8 +6,7 @@ import Nav from '../components/nav'
 const Home = () => {
   const [date, setDate] = useState(null);
 
-  useEffect(() => {
-
+  useEffect( () => {
     async function getDate() {
       const res = await fetch('/api/date');
       const newDate = await res.json();
