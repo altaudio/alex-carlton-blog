@@ -7,6 +7,7 @@ const Home = () => {
   const [date, setDate] = useState(null);
 
   useEffect(() => {
+
     async function getDate() {
       const res = await fetch('/api/date');
       const newDate = await res.json();
