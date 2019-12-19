@@ -1,7 +1,8 @@
 import React from "react";
+import H1 from "core/h1";
 
 const Home = () => {
-  return <h1>Hey there</h1>;
+  return <H1>Hey there</H1>;
 };
 
 export default Home;
