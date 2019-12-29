@@ -1,8 +1,8 @@
 import React from "react";
-import H1 from "core/h1";
+import { PageHeader } from "composed/PageHeader";
 
 const Home = () => {
-  return <H1>Hey there</H1>;
+  return <PageHeader title="My Blog, bitches." />;
 };
 
 export default Home;
