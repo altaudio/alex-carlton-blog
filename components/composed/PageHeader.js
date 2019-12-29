@@ -1,7 +1,7 @@
 import React from "react";
 import { string } from "prop-types";
 import { Header } from "core/Header";
-import { H1 } from "core/headers/H";
+import { H1 } from "core/headers/HeaderOne";
 
 const PageHeader = ({ title }) => {
   return (
