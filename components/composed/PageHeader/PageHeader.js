@@ -14,7 +14,11 @@ const PageHeader = ({ title }) => {
 };
 
 PageHeader.propTypes = {
-  title: string.isRequired
+  title: string
+};
+
+PageHeader.defaultProps = {
+  title: "My blog, bitches."
 };
 
 export { PageHeader };
