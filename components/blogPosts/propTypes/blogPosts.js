@@ -1,4 +1,4 @@
-import { string, arrayOf, shape } from "prop-types";
+import { string, objectOf, shape } from "prop-types";
 
 export const blogPostType = {
   id: string.isRequired,
@@ -8,4 +8,4 @@ export const blogPostType = {
 };
 export const blogPostTypeShape = shape(blogPostType);
 
-export const blogPostsType = arrayOf(blogPostType);
+export const blogPostsType = objectOf(blogPostTypeShape);
