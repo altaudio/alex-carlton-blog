@@ -1,7 +1,6 @@
 import React from "react";
 import { arrayOf, shape, string } from "prop-types";
 import { UL, LI } from "core/Lists";
-import { Anchor } from "core/Anchor";
 import Link from "next/link";
 
 const Navigation = ({ links }) => {
@@ -9,9 +8,7 @@ const Navigation = ({ links }) => {
     <UL>
       {links.map(({ name, href }) => (
         <LI>
-          <Link href={href}>
-            <Anchor>{name}</Anchor>
-          </Link>
+          <Link href={href}>{name}</Link>
         </LI>
       ))}
     </UL>
