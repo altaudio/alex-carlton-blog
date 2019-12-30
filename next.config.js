@@ -3,6 +3,7 @@ const path = require('path')
 const aliases = [
   { alias: 'core', filePath: 'components/core' },
   { alias: 'composed', filePath: 'components/composed' },
+  { alias: 'blogPosts', filePath: 'components/blogPosts' },
 ]
 
 module.exports = {

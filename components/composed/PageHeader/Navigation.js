@@ -7,8 +7,10 @@ const Navigation = ({ links }) => {
   return (
     <UL>
       {links.map(({ name, href }) => (
-        <LI>
-          <Link href={href}>{name}</Link>
+        <LI key={href}>
+          <Link href={href}>
+            <a>{name}</a>
+          </Link>
         </LI>
       ))}
     </UL>
