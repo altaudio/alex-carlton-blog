@@ -1,13 +1,19 @@
 import React from "react";
+import { chain, map } from "lodash";
 import { blogPostsType } from "blogPosts/propTypes/blogPosts";
 import { UL } from "core/Lists";
 import { blogPosts } from "blogPosts/blogPosts";
 import { ListItem } from "./ListItem";
 
 const BlogPostList = ({ posts }) => {
+  const sortedPosts = chain(posts)
+    .sortBy(post => post.publishedAt)
+    .reverse()
+    .value();
+
   return (
     <UL>
-      {posts.map(({ id, title, description, image }) => (
+      {map(sortedPosts, ({ id, title, description, image }) => (
         <ListItem
           key={id}
           id={id}

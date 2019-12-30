@@ -1,13 +1,19 @@
 import React from "react";
 import { useRouter } from "next/router";
+import { Main } from "core/Main";
 import { PageHeader } from "composed/PageHeader/PageHeader";
+import { blogPosts } from "blogPosts/blogPosts";
 
 const Post = () => {
-  const router = useRouter();
+  const {
+    query: { id }
+  } = useRouter();
+  const blogPost = blogPosts[id];
+
   return (
     <>
       <PageHeader />
-      {router.query.id}
+      <Main>{blogPost && <blogPost.Component />}</Main>
     </>
   );
 };
