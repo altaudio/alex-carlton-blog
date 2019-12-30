@@ -1,5 +1,5 @@
 import React from "react";
-import { blogPostsTypes } from "blogPosts/propTypes/blogPosts";
+import { blogPostsType } from "blogPosts/propTypes/blogPosts";
 import { UL } from "core/Lists";
 import { blogPosts } from "blogPosts/blogPosts";
 import { ListItem } from "./ListItem";
@@ -25,7 +25,7 @@ BlogPostList.defaultProps = {
 };
 
 BlogPostList.propTypes = {
-  posts: blogPostsTypes
+  posts: blogPostsType
 };
 
 export { BlogPostList };

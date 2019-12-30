@@ -8,4 +8,4 @@ export const blogPostType = {
 };
 export const blogPostTypeShape = shape(blogPostType);
 
-export const blogPostsTypes = arrayOf(blogPostType);
+export const blogPostsType = arrayOf(blogPostType);
