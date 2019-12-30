@@ -2,7 +2,7 @@ import React from "react";
 import { LI } from "core/Lists";
 import { H2 } from "core/Headers/HeaderTwo";
 import { Paragraph } from "core/Paragraph";
-import { Image } from "core/image";
+import { Image } from "core/Image";
 import Link from "next/link";
 import styled from "styled-components";
 import { blogPostType } from "blogPosts/propTypes/blogPosts";
