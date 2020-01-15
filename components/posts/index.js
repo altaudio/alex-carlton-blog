@@ -1,6 +1,6 @@
-import { InformationDiet } from "./posts/InformationDiet";
+import { InformationDiet } from "./InformationDiet";
 
-export const blogPosts = {
+export const posts = {
   "programmers-information-diet": {
     id: "programmers-information-diet",
     title: " First A programmers inforamtion diet",

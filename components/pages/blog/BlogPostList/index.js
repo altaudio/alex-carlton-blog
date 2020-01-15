@@ -1,12 +1,12 @@
 import React from "react";
 import { chain, map } from "lodash";
-import { blogPostsType } from "blogPosts/propTypes/blogPosts";
+import { posts } from "posts";
+import { postsType } from "posts/propTypes";
 import { UL } from "core/Lists";
-import { blogPosts } from "blogPosts/blogPosts";
 import { ListItem } from "./ListItem";
 
-const BlogPostList = ({ posts }) => {
-  const sortedPosts = chain(posts)
+const BlogPostList = ({ posts: blogPosts }) => {
+  const sortedPosts = chain(blogPosts)
     .sortBy(post => post.publishedAt)
     .reverse()
     .value();
@@ -21,11 +21,11 @@ const BlogPostList = ({ posts }) => {
 };
 
 BlogPostList.defaultProps = {
-  posts: blogPosts
+  posts
 };
 
 BlogPostList.propTypes = {
-  posts: blogPostsType
+  posts: postsType
 };
 
 export { BlogPostList };
