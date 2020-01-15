@@ -13,14 +13,8 @@ const BlogPostList = ({ posts }) => {
 
   return (
     <UL>
-      {map(sortedPosts, ({ id, title, description, image }) => (
-        <ListItem
-          key={id}
-          id={id}
-          title={title}
-          description={description}
-          image={image}
-        />
+      {map(sortedPosts, ({ id, title, description }) => (
+        <ListItem key={id} id={id} title={title} description={description} />
       ))}
     </UL>
   );
