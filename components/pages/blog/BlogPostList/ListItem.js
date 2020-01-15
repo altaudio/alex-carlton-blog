@@ -3,7 +3,7 @@ import { LI } from "core/Lists";
 import { H2 } from "core/Headers/HeaderTwo";
 import { Paragraph } from "core/Paragraph";
 import Link from "next/link";
-import { blogPostType } from "posts/propTypes/blogPosts";
+import { postType } from "posts/propTypes";
 
 const ListItem = ({ id, title, description }) => {
   return (
@@ -18,6 +18,6 @@ const ListItem = ({ id, title, description }) => {
   );
 };
 
-ListItem.propTypes = blogPostType;
+ListItem.propTypes = postType;
 
 export { ListItem };

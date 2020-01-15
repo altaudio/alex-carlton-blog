@@ -1,11 +1,11 @@
 import { string, objectOf, shape } from "prop-types";
 
-export const blogPostType = {
+export const postType = {
   id: string.isRequired,
   title: string.isRequired,
   description: string.isRequired
 };
 
-export const blogPostTypeShape = shape(blogPostType);
+export const postTypeShape = shape(postType);
 
-export const blogPostsType = objectOf(blogPostTypeShape);
+export const postsType = objectOf(postTypeShape);

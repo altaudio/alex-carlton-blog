@@ -1,7 +1,7 @@
 import React from "react";
 import { chain, map } from "lodash";
 import { posts } from "posts";
-import { blogPostsType } from "posts/propTypes/blogPosts";
+import { postsType } from "posts/propTypes";
 import { UL } from "core/Lists";
 import { ListItem } from "./ListItem";
 
@@ -25,7 +25,7 @@ BlogPostList.defaultProps = {
 };
 
 BlogPostList.propTypes = {
-  posts: blogPostsType
+  posts: postsType
 };
 
 export { BlogPostList };
