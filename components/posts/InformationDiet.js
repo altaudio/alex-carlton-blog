@@ -1,6 +1,6 @@
 import React from "react";
 import { Paragraph } from "core/Paragraph";
-import { BlogPostWrapper } from "../BlogPostWrapper/BlogPostWrapper";
+import { BlogPostWrapper } from "./BlogPostWrapper";
 
 const InformationDiet = () => {
   return (

@@ -4,7 +4,7 @@ const aliases = [
   { alias: 'pages', filePath: 'components/pages' },
   { alias: 'core', filePath: 'components/core' },
   { alias: 'composed', filePath: 'components/composed' },
-  { alias: 'blogPosts', filePath: 'components/blogPosts' },
+  { alias: 'posts', filePath: 'components/posts' },
 ]
 
 module.exports = {
