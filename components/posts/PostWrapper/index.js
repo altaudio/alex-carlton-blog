@@ -5,7 +5,7 @@ import { Article } from "core/Article";
 import { H2 } from "core/Headers/HeaderTwo";
 import { H3 } from "core/Headers/HeaderThree";
 
-const BlogPostWrapper = ({ title, subtitle, children }) => {
+const PostWrapper = ({ title, subtitle, children }) => {
   return (
     <Article>
       <H2>{title}</H2>
@@ -18,10 +18,10 @@ const BlogPostWrapper = ({ title, subtitle, children }) => {
   );
 };
 
-BlogPostWrapper.propTypes = {
+PostWrapper.propTypes = {
   title: string.isRequired,
   subtitle: string.isRequired,
   children: node.isRequired
 };
 
-export { BlogPostWrapper };
+export { PostWrapper };
