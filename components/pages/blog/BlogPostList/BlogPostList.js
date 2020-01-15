@@ -1,8 +1,8 @@
 import React from "react";
 import { chain, map } from "lodash";
+import { blogPosts } from "blogPosts/posts";
 import { blogPostsType } from "blogPosts/propTypes/blogPosts";
 import { UL } from "core/Lists";
-import { blogPosts } from "blogPosts/blogPosts";
 import { ListItem } from "./ListItem";
 
 const BlogPostList = ({ posts }) => {

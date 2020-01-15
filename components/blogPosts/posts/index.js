@@ -1,4 +1,4 @@
-import { InformationDiet } from "./posts/InformationDiet";
+import { InformationDiet } from "./InformationDiet";
 
 export const blogPosts = {
   "programmers-information-diet": {
