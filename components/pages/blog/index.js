@@ -1,7 +1,7 @@
 import React from "react";
 import { PageHeader } from "composed/PageHeader/PageHeader";
 import { Main } from "core/Main";
-import { BlogPostList } from "./BlogPostList/BlogPostList";
+import { BlogPostList } from "./BlogPostList";
 
 const Blog = () => {
   return (
