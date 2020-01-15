@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import { Main } from "core/Main";
-import { PageHeader } from "composed/PageHeader/PageHeader";
+import { PageHeader } from "composed/PageHeader";
 import { blogPosts } from "blogPosts/posts";
 
 const Post = () => {

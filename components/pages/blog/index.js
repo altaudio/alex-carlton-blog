@@ -1,5 +1,5 @@
 import React from "react";
-import { PageHeader } from "composed/PageHeader/PageHeader";
+import { PageHeader } from "composed/PageHeader";
 import { Main } from "core/Main";
 import { BlogPostList } from "./BlogPostList";
 
