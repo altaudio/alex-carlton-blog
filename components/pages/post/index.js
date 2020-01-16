@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { Main } from "core/Main";
 import { PageHeader } from "composed/PageHeader";
 import { posts } from "posts";
+import { PostWrapper } from "./PostWrapper";
 
 const Post = () => {
   const {
@@ -13,7 +14,13 @@ const Post = () => {
   return (
     <>
       <PageHeader />
-      <Main>{blogPost && <blogPost.Component />}</Main>
+      <Main>
+        {blogPost ? (
+          <PostWrapper title={blogPost.title} subtitle={blogPost.subtitle}>
+            <blogPost.Component />
+          </PostWrapper>
+        ) : null}
+      </Main>
     </>
   );
 };
